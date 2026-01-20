@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UGMO – United Global Micronations Organization</title>
+  <style>
+    :root {
+      --primary: #1f3c88;
+      --secondary: #f5f7fb;
+      --accent: #2f8dc8;
+      --text: #1a1a1a;
+      --muted: #6b7280;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: var(--secondary);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      position: relative;
+      min-height: 100vh;
+      background: linear-gradient(rgba(15,23,42,0.65), rgba(15,23,42,0.65)), url('hero.jpg') center/cover no-repeat;
+      color: white;
+      padding: 2.5rem 1.5rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    nav h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      opacity: 0.9;
+    }
+
+    nav a:hover {
+      opacity: 1;
+    }
+
+    .hero {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      opacity: 0.95;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    section {
+      padding: 4rem 1.5rem;
+    }
+
+    section h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    .card h4 {
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+
+    footer {
+      background: #0f172a;
+      color: #cbd5f5;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
+
+    .tag {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <img src="ugmo.png" alt="UGMO Logo" style="height:42px;" />
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#charter">Charter</a></li>
+        <li><a href="#members">Members</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero" style="display:flex;align-items:center;justify-content:center;min-height:calc(100vh - 90px);text-align:center;">
+      <div style="max-width:760px;margin:auto;">
+        <span class="tag" style="margin-bottom:1rem;">International Organization</span>
+        <h2 style="font-size:3.2rem;line-height:1.2;margin-bottom:1.2rem;">United Global Micronations Organization</h2>
+        <p style="font-size:1.15rem;opacity:0.95;margin-bottom:2rem;">A global political and military alliance of micronations, promoting cooperation, stability, and structured governance.</p>
+        <a href="#charter" style="display:inline-block;background:white;color:#1f3c88;padding:0.8rem 1.7rem;border-radius:10px;font-weight:600;text-decoration:none;">View Charter</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="container">
+    <h3>About UGMO</h3>
+    <p>
+      The United Global Micronations Organization (UGMO) is an international alliance of recognized micronations.
+      It serves as a platform for political cooperation, collective security, and structured inter-micronational relations.
+    </p>
+  </div>
+</section>
+
+<section id="charter">
+  <div class="container">
+    <h3>Charter & Governance</h3>
+    <div class="card-grid">
+      <div class="card">
+        <h4>Democratic Voting</h4>
+        <p>Most decisions are determined by majority vote, requiring over 50% approval.</p>
+      </div>
+      <div class="card">
+        <h4>Membership Rules</h4>
+        <p>Nations involved in active wars or extreme negative relations are not eligible for membership.</p>
+      </div>
+      <div class="card">
+        <h4>Leadership</h4>
+        <p>A new Head of UGMO is elected every six months by member states.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="members">
+  <div class="container">
+    <h3>Member States</h3>
+    <p>
+      UGMO consists of independent micronations from across the world.
+      A full, updated list of member states will be published here.
+    </p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h3>Contact</h3>
+    <p>
+      For membership inquiries or official communication, please contact UGMO through its official Discord server
+      or designated representatives.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>
+    © United Global Micronations Organization<br />
+    Website developed with the assistance of Moeezland
+  </p>
+</footer>
+
+</body>
+</html>
